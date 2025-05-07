@@ -107,8 +107,8 @@ a:focus {
 
 /* --- 個人照片樣式 --- */
 .profile-photo {
-    width: 150px;  /* 控制寬度 */
-    height: 150px; /* 控制高度，確保是正方形以形成完美圓形 */
+    width: 15px;  /* 控制寬度 */
+    height: 15px; /* 控制高度，確保是正方形以形成完美圓形 */
     border-radius: 50%; /* 圓形效果 */
     object-fit: cover; /* 確保圖片填滿圓形區域而不變形 (重要!) */
     float: left; /* 讓文字環繞在照片右邊 */
