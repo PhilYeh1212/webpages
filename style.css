@@ -107,13 +107,13 @@ a:focus {
 
 /* --- 個人照片樣式 --- */
 .profile-photo {
-    width: 150px;
-    height: 150px; /* 確保是正方形以形成完美圓形 */
-    border-radius: 50%; /* 圓形照片 */
-    object-fit: cover; /* 確保圖片填滿而不變形 */
-    float: left;
-    margin-right: 25px;
-    margin-bottom: 15px;
+    width: 150px;  /* 控制寬度 */
+    height: 150px; /* 控制高度，確保是正方形以形成完美圓形 */
+    border-radius: 50%; /* 圓形效果 */
+    object-fit: cover; /* 確保圖片填滿圓形區域而不變形 (重要!) */
+    float: left; /* 讓文字環繞在照片右邊 */
+    margin-right: 25px; /* 照片右邊的間距 */
+    margin-bottom: 15px; /* 照片下方的間距 */
     border: 3px solid var(--accent-color); /* 用強調色做邊框 */
 }
 
