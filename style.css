@@ -20,7 +20,11 @@ body {
 }
 
 /* --- 排版與容器 --- */
+<<<<<<< HEAD
+.container { /* 如果您選擇使用 container 包裹內容 */
+=======
 .container {
+>>>>>>> 6ec45742ac5752d13937fb03711f54a64ad9b30a
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
@@ -77,18 +81,74 @@ p {
     margin-bottom: 15px;
 }
 
+<<<<<<< HEAD
+/* --- 超連結樣式 --- */
+a {
+    color: #007bff; /* 標準的連結藍色 */
+    text-decoration: underline;
+=======
 /* --- 超連結樣式 (更新為藍色帶底線) --- */
 a {
     color: #007bff; /* 標準的連結藍色 */
     text-decoration: underline; /* 加上底線 */
+>>>>>>> 6ec45742ac5752d13937fb03711f54a64ad9b30a
     transition: color 0.2s ease-in-out;
 }
 
 a:hover,
 a:focus {
     color: #0056b3; /* 滑鼠懸停或聚焦時，顏色變深一點的藍色 */
+<<<<<<< HEAD
+    text-decoration: underline;
+=======
     text-decoration: underline; /* 保持底線 */
+>>>>>>> 6ec45742ac5752d13937fb03711f54a64ad9b30a
 }
+
+/* --- 個人照片樣式 --- */
+.profile-photo {
+    width: 150px;
+    height: 150px; /* 確保是正方形以形成完美圓形 */
+    border-radius: 50%; /* 圓形照片 */
+    object-fit: cover; /* 確保圖片填滿而不變形 */
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    border: 3px solid var(--accent-color); /* 用強調色做邊框 */
+}
+
+/* --- 履歷下載按鈕區塊樣式 --- */
+.resume-download {
+    text-align: left; /* 或者 center 如果您希望按鈕在區塊中居中 */
+    margin-top: 20px;
+    clear: left; /* 如果照片在左邊浮動，確保按鈕在其下方 */
+}
+
+/* --- 按鈕樣式 (用於履歷下載等) --- */
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--accent-color); /* 使用強調色 */
+    color: var(--primary-bg-color); /* 文字用深色 */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: none;
+}
+
+.button-link:hover,
+.button-link:focus {
+    background-color: #00e6e6; /* 強調色變亮 */
+    color: var(--primary-bg-color); /* 保持文字深色 */
+    text-decoration: none; /* 懸停時移除按鈕文字底線 */
+}
+
+.button-link i, /* 圖示與文字間距 */
+#contact ul li a i {
+    margin-right: 8px;
+}
+
 
 /* --- 專案區塊 (Project Articles) --- */
 .project {
@@ -103,18 +163,30 @@ a:focus {
 
 .project:hover {
     transform: translateY(-5px);
+<<<<<<< HEAD
+    box-shadow: 0 8px 25px rgba(0, 200, 255, 0.3);
+}
+
+.project h3 {
+    color: var(--heading-color);
+=======
     box-shadow: 0 8px 25px rgba(0, 200, 255, 0.3); /* 強調色陰影 (這裡的強調色是青色) */
 }
 
 .project h3 {
     color: var(--heading-color); /* 專案標題用亮色 (不是連結藍) */
+>>>>>>> 6ec45742ac5752d13937fb03711f54a64ad9b30a
 }
 
 .project p em { /* 技術棧 */
     font-style: normal;
     font-size: 0.9em;
     color: var(--text-color);
+<<<<<<< HEAD
+    background-color: rgba(0, 200, 255, 0.1);
+=======
     background-color: rgba(0, 200, 255, 0.1); /* 淡青色背景 */
+>>>>>>> 6ec45742ac5752d13937fb03711f54a64ad9b30a
     padding: 3px 8px;
     border-radius: 4px;
     margin-right: 5px;
@@ -122,16 +194,36 @@ a:focus {
     margin-bottom: 5px;
 }
 
+<<<<<<< HEAD
+/* --- 技能列表、學歷、證照、語言能力列表樣式 --- */
+#skills ul, 
+#education ul, 
+#certifications ul, 
+#languages ul {
+=======
 /* --- 技能列表 (Skills) --- */
 #skills ul {
+>>>>>>> 6ec45742ac5752d13937fb03711f54a64ad9b30a
     list-style-type: none;
     padding-left: 0;
 }
 
+#skills li, 
+#education li, 
+#certifications li, 
+#languages li {
+    margin-bottom: 8px; /* 統一列表項間距 */
+    padding: 5px 0; /* 增加一點上下內邊距 */
+}
+
+/* 特別為技能列表項目增加背景和邊框 */
 #skills li {
+<<<<<<< HEAD
+    background-color: rgba(0, 200, 255, 0.08);
+=======
     background-color: rgba(0, 200, 255, 0.08); /* 更淡的青色背景 */
+>>>>>>> 6ec45742ac5752d13937fb03711f54a64ad9b30a
     padding: 8px 15px;
-    margin-bottom: 8px;
     border-radius: 4px;
     border-left: 3px solid var(--accent-color); /* 技能列表左邊框使用強調色 */
     font-size: 0.95em;
@@ -139,18 +231,27 @@ a:focus {
 
 #skills h3 { /* AI / 軟體開發 / 硬體與整合 的分類標題 */
     font-size: 1.2em;
+<<<<<<< HEAD
+    color: var(--accent-color);
+=======
     color: var(--accent-color); /* 分類標題使用強調色 */
+>>>>>>> 6ec45742ac5752d13937fb03711f54a64ad9b30a
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
+<<<<<<< HEAD
+/* --- 聯絡方式列表 --- */
+#contact ul {
+=======
 /* --- 聯絡方式 (Contact) 與 學歷 (Education) 列表 --- */
 #contact ul, #education ul {
+>>>>>>> 6ec45742ac5752d13937fb03711f54a64ad9b30a
     list-style-type: none;
     padding-left: 0;
 }
 
-#contact li, #education li {
+#contact li {
     margin-bottom: 10px;
     font-size: 1.1em;
 }
@@ -164,7 +265,7 @@ footer {
     color: #aaa;
 }
 
-/* --- 響應式設計 (基本範例) --- */
+/* --- 響應式設計 --- */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2.2em;
@@ -178,4 +279,17 @@ footer {
     .project {
         padding: 15px;
     }
+<<<<<<< HEAD
+    .profile-photo { /* 照片在小螢幕時靠左可能導致文字空間不足，可考慮居中 */
+        float: none; /* 取消浮動 */
+        display: block; /* 讓 margin: auto 生效 */
+        margin: 0 auto 20px auto; /* 上0 左右自動 下20 */
+    }
+    .resume-download {
+        text-align: center; /* 按鈕在小螢幕時居中 */
+        clear: both; /* 確保在照片下方 */
+    }
 }
+=======
+}
+>>>>>>> 6ec45742ac5752d13937fb03711f54a64ad9b30a
