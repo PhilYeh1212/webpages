@@ -20,7 +20,11 @@ body {
 }
 
 /* --- 排版與容器 --- */
+<<<<<<< HEAD
 .container { /* 如果您選擇使用 container 包裹內容 */
+=======
+.container {
+>>>>>>> 6ec45742ac5752d13937fb03711f54a64ad9b30a
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
@@ -33,7 +37,7 @@ header, section, footer {
 
 header {
     text-align: center;
-    border-bottom: 2px solid var(--accent-color);
+    border-bottom: 2px solid var(--accent-color); /* 標頭底線使用強調色 */
     padding-bottom: 30px;
 }
 
@@ -46,7 +50,7 @@ header h1 {
 
 header p {
     font-size: 1.2em;
-    color: var(--accent-color);
+    color: var(--accent-color); /* 副標題使用強調色 */
     margin-top: 0;
     font-weight: 300;
 }
@@ -68,7 +72,7 @@ h2 {
 
 h3 {
     font-size: 1.4em;
-    color: var(--accent-color);
+    color: var(--accent-color); /* 小標題使用強調色 */
     margin-top: 0;
     margin-bottom: 8px;
 }
@@ -77,28 +81,39 @@ p {
     margin-bottom: 15px;
 }
 
+<<<<<<< HEAD
 /* --- 超連結樣式 --- */
 a {
     color: #007bff; /* 標準的連結藍色 */
     text-decoration: underline;
+=======
+/* --- 超連結樣式 (更新為藍色帶底線) --- */
+a {
+    color: #007bff; /* 標準的連結藍色 */
+    text-decoration: underline; /* 加上底線 */
+>>>>>>> 6ec45742ac5752d13937fb03711f54a64ad9b30a
     transition: color 0.2s ease-in-out;
 }
 
 a:hover,
 a:focus {
     color: #0056b3; /* 滑鼠懸停或聚焦時，顏色變深一點的藍色 */
+<<<<<<< HEAD
     text-decoration: underline;
+=======
+    text-decoration: underline; /* 保持底線 */
+>>>>>>> 6ec45742ac5752d13937fb03711f54a64ad9b30a
 }
 
 /* --- 個人照片樣式 --- */
 .profile-photo {
-    width: 150px;
-    height: 150px; /* 確保是正方形以形成完美圓形 */
-    border-radius: 50%; /* 圓形照片 */
-    object-fit: cover; /* 確保圖片填滿而不變形 */
-    float: left;
-    margin-right: 25px;
-    margin-bottom: 15px;
+    width: 150px;  /* 控制寬度 */
+    height: 150px; /* 控制高度，確保是正方形以形成完美圓形 */
+    border-radius: 50%; /* 圓形效果 */
+    object-fit: cover; /* 確保圖片填滿圓形區域而不變形 (重要!) */
+    float: left; /* 讓文字環繞在照片右邊 */
+    margin-right: 25px; /* 照片右邊的間距 */
+    margin-bottom: 15px; /* 照片下方的間距 */
     border: 3px solid var(--accent-color); /* 用強調色做邊框 */
 }
 
@@ -141,25 +156,37 @@ a:focus {
     padding: 25px;
     margin-bottom: 25px;
     border-radius: 8px;
-    border-left: 5px solid var(--accent-color);
+    border-left: 5px solid var(--accent-color); /* 專案左邊框使用強調色 */
     box-shadow: var(--card-shadow);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project:hover {
     transform: translateY(-5px);
+<<<<<<< HEAD
     box-shadow: 0 8px 25px rgba(0, 200, 255, 0.3);
 }
 
 .project h3 {
     color: var(--heading-color);
+=======
+    box-shadow: 0 8px 25px rgba(0, 200, 255, 0.3); /* 強調色陰影 (這裡的強調色是青色) */
+}
+
+.project h3 {
+    color: var(--heading-color); /* 專案標題用亮色 (不是連結藍) */
+>>>>>>> 6ec45742ac5752d13937fb03711f54a64ad9b30a
 }
 
 .project p em { /* 技術棧 */
     font-style: normal;
     font-size: 0.9em;
     color: var(--text-color);
+<<<<<<< HEAD
     background-color: rgba(0, 200, 255, 0.1);
+=======
+    background-color: rgba(0, 200, 255, 0.1); /* 淡青色背景 */
+>>>>>>> 6ec45742ac5752d13937fb03711f54a64ad9b30a
     padding: 3px 8px;
     border-radius: 4px;
     margin-right: 5px;
@@ -167,11 +194,16 @@ a:focus {
     margin-bottom: 5px;
 }
 
+<<<<<<< HEAD
 /* --- 技能列表、學歷、證照、語言能力列表樣式 --- */
 #skills ul, 
 #education ul, 
 #certifications ul, 
 #languages ul {
+=======
+/* --- 技能列表 (Skills) --- */
+#skills ul {
+>>>>>>> 6ec45742ac5752d13937fb03711f54a64ad9b30a
     list-style-type: none;
     padding-left: 0;
 }
@@ -186,22 +218,35 @@ a:focus {
 
 /* 特別為技能列表項目增加背景和邊框 */
 #skills li {
+<<<<<<< HEAD
     background-color: rgba(0, 200, 255, 0.08);
+=======
+    background-color: rgba(0, 200, 255, 0.08); /* 更淡的青色背景 */
+>>>>>>> 6ec45742ac5752d13937fb03711f54a64ad9b30a
     padding: 8px 15px;
     border-radius: 4px;
-    border-left: 3px solid var(--accent-color);
+    border-left: 3px solid var(--accent-color); /* 技能列表左邊框使用強調色 */
     font-size: 0.95em;
 }
 
 #skills h3 { /* AI / 軟體開發 / 硬體與整合 的分類標題 */
     font-size: 1.2em;
+<<<<<<< HEAD
     color: var(--accent-color);
+=======
+    color: var(--accent-color); /* 分類標題使用強調色 */
+>>>>>>> 6ec45742ac5752d13937fb03711f54a64ad9b30a
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
+<<<<<<< HEAD
 /* --- 聯絡方式列表 --- */
 #contact ul {
+=======
+/* --- 聯絡方式 (Contact) 與 學歷 (Education) 列表 --- */
+#contact ul, #education ul {
+>>>>>>> 6ec45742ac5752d13937fb03711f54a64ad9b30a
     list-style-type: none;
     padding-left: 0;
 }
@@ -234,6 +279,7 @@ footer {
     .project {
         padding: 15px;
     }
+<<<<<<< HEAD
     .profile-photo { /* 照片在小螢幕時靠左可能導致文字空間不足，可考慮居中 */
         float: none; /* 取消浮動 */
         display: block; /* 讓 margin: auto 生效 */
@@ -244,3 +290,6 @@ footer {
         clear: both; /* 確保在照片下方 */
     }
 }
+=======
+}
+>>>>>>> 6ec45742ac5752d13937fb03711f54a64ad9b30a
