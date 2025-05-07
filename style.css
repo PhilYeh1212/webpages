@@ -1,0 +1,181 @@
+/* --- 全局與基本設定 --- */
+:root {
+    --primary-bg-color: #1a1a2e; /* 深藍紫色背景 */
+    --secondary-bg-color: #162447; /* 稍淺的藍色，用於卡片或區塊 */
+    --text-color: #e0e0e0; /* 淺灰色文字 */
+    --accent-color: #00cyan; /* 青色強調色 (您也可以用 #00c0ff 或 #4fc3f7 等亮藍色) */
+    --heading-color: #ffffff; /* 標題用白色 */
+    --border-color: #2a3b69; /* 邊框顏色 */
+    --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+body {
+    font-family: 'Roboto', 'Noto Sans TC', sans-serif; /* 現代感無襯線字體，優先使用Roboto，中文則用Noto Sans TC */
+    background-color: var(--primary-bg-color);
+    color: var(--text-color);
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    font-size: 16px; /* 基本字體大小 */
+}
+
+/* --- 排版與容器 --- */
+.container { /* 可以選擇性地將 header, main, footer 包裹在一個 container 內來控制最大寬度 */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header, section, footer {
+    padding: 30px 20px; /* 上下多一點，左右少一點 */
+    margin-bottom: 20px; /* 區塊間的間隔 */
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.8em; /* 放大主標題 */
+    color: var(--heading-color);
+    margin-bottom: 0.2em;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.2em;
+    color: var(--accent-color);
+    margin-top: 0;
+    font-weight: 300;
+}
+
+header p em {
+    font-style: normal;
+    color: var(--text-color);
+    font-size: 0.9em;
+}
+
+h2 {
+    font-size: 2em; /* 區塊標題 */
+    color: var(--heading-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+h3 {
+    font-size: 1.4em;
+    color: var(--accent-color);
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    color: #ffffff; /* 滑鼠懸停時變亮白 */
+    text-shadow: 0 0 5px var(--accent-color);
+}
+
+/* --- 專案區塊 (Project Articles) --- */
+.project {
+    background-color: var(--secondary-bg-color);
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border-left: 5px solid var(--accent-color);
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 200, 255, 0.3); /* 強調色陰影 */
+}
+
+.project h3 {
+    color: var(--heading-color); /* 專案標題用亮色 */
+}
+
+.project p em { /* 技術棧 */
+    font-style: normal;
+    font-size: 0.9em;
+    color: var(--text-color);
+    background-color: rgba(0, 200, 255, 0.1); /* 淡強調色背景 */
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-right: 5px; /* 標籤間距 */
+    display: inline-block; /* 讓 padding 生效 */
+    margin-bottom: 5px; /* 換行時的間距 */
+}
+
+
+/* --- 技能列表 (Skills) --- */
+#skills ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#skills li {
+    background-color: rgba(0, 200, 255, 0.08); /* 更淡的強調色背景 */
+    padding: 8px 15px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border-left: 3px solid var(--accent-color);
+    font-size: 0.95em;
+}
+
+#skills h3 { /* AI / 軟體開發 / 硬體與整合 */
+    font-size: 1.2em;
+    color: var(--accent-color);
+    margin-top: 20px; /* 與上一個列表的間隔 */
+    margin-bottom: 10px;
+}
+
+
+/* --- 聯絡方式 (Contact) 與 學歷 (Education) 列表 --- */
+#contact ul, #education ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#contact li, #education li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+/* --- 頁尾 (Footer) --- */
+footer {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.9em;
+    color: #aaa; /* 頁尾文字用更暗的顏色 */
+}
+
+/* --- 響應式設計 (基本範例) --- */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+    header p {
+        font-size: 1em;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+    .project {
+        padding: 15px;
+    }
+}
