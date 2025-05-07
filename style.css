@@ -79,16 +79,15 @@ p {
 
 /* --- 超連結樣式 (您提供的 style.css 版本是這個，我先保留) --- */
 a {
-    color: var(--accent-color); /* 使用強調色作為連結顏色 */
-    text-decoration: none;      /* 無底線 */
+    color: #007bff; /* 使用強調色作為連結顏色 */
+    text-decoration: underline;      /* 無底線 */
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 a:hover,
 a:focus {
-    color: #ffffff; /* 滑鼠懸停時變亮白 */
-    text-shadow: 0 0 5px var(--accent-color);
-    text-decoration: none; /* 懸停時也確保無底線 */
+    color: #0056b3; /* 滑鼠懸停或聚焦時，顏色變深一點的藍色 */
+    text-decoration: underline; /* 保持底線 */
 }
 
 /* --- 個人照片樣式 --- */
