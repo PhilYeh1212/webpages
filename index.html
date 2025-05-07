@@ -9,25 +9,40 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
 
     <header>
+<<<<<<< HEAD
+        <h1>葉俊良 (Phil)</h1>
+        <p>AI 應用與智慧系統開發者</p>
+        <p><em>專注於機器學習、智慧影像辨識與自動化解決方案</em></p>
+=======
         <h1>葉俊良 (Phil Yeh)</h1>
         <p>AI 應用與智慧系統開發者</p> <p><em>專注於機器學習、智慧影像辨識與自動化解決方案</em></p>
+>>>>>>> 6ec45742ac5752d13937fb03711f54a64ad9b30a
     </header>
 
     <main>
         <section id="introduction">
+            <img src="images/phil_photo.jpg" alt="葉俊良 (Phil) 的照片" class="profile-photo">
+            
             <h2>關於我</h2>
             <p>
-                您好，我是葉俊良，一位對人工智慧應用充滿熱忱的工程師。我擁有超過12年的軟硬體整合與系統開發經驗，
+                您好，我是葉俊良，一位對人工智慧應用充滿熱忱的工程師。擁有超過12年的軟硬體整合與系統開發經驗，
                 近年專注於將<strong>機器學習</strong>與<strong>深度學習技術</strong>應用於解決實際產業問題，特別是在<strong>智慧影像辨識</strong>和<strong>工業自動化</strong>領域。
-                目前於國立陽明交通大學理學院碩士班進修，期望在 AI 與數據科學領域持續深化專業知識並拓展技術視野。
-                我擅長 Python 程式設計、MySQL 資料庫應用，並具備豐富的工業通訊協議整合及專案管理經驗。
+                目前於國立陽明交通大學理學院碩士班進修，在 AI 與數據科學領域持續深化專業知識並拓展技術視野。
+                擅長 Python 程式設計、MySQL 資料庫應用，並具備豐富的工業通訊協議整合及專案管理經驗。
             </p>
-        </section>
+            <p class="resume-download">
+                <a href="葉俊良_履歷.pdf" download="葉俊良_Phil_Yeh_Resume.pdf" class="button-link">
+                    <i class="fas fa-download"></i> 下載我的履歷 (PDF)
+                </a>
+            </p>
+            <div style="clear: both;"></div> </section>
 
         <section id="education">
             <h2>學歷</h2>
@@ -37,6 +52,36 @@
                 <li>私立大華技術學院 | 電子工程系 (五專畢業, 2002-2007)</li>
             </ul>
         </section>
+
+        <section id="certifications">
+            <h2>證照與認證</h2>
+            <ul>
+                <li>台灣嵌入式單晶片技術士 (丙級)</li>
+                <li>Cisco 國際認證 (例如：CCNA，請依您的實際證照修改)</li>
+                </ul>
+        </section>
+
+        <section id="languages">
+            <h2>語言能力</h2>
+            <ul>
+                <li>中文 (母語/精通)</li>
+                <li>英文 (中等/工作溝通)</li>
+                <li>日文 (基礎/略懂)</li>
+                <li>客語 (中等)</li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>工作經歷摘要</h2>
+            <article>
+                <h3>艾思特能源股份有限公司 | 主任工程師 (2021/7 - 至今)</h3>
+                <p>負責自動化系統開發、通訊整合、資料庫管理、機器學習應用及專案管理。</p>
+            </article>
+            <article>
+                <h3>鐙鋒綠能科技股份有限公司 | 研發工程師 (2018/10 - 2021/7)</h3>
+                <p>進行系統控制程式撰寫(Python)、電路設計、PCB Layout及客戶支援。</p>
+            </article>
+            </section>
 
         <section id="projects">
             <h2>AI 相關專案與成果</h2>
@@ -62,7 +107,7 @@
                 <p><em>技術棧：Modbus, Ethernet/IP, RS485, TCP/IP, Python, 物聯網(IoT)數據整合</em></p>
             </article>
 
-            <article class="project">
+             <article class="project">
                 <h3>支援AI服務的後端API系統開發</h3>
                 <p>設計並實作高效能的後端API，用於AI模型輸入資料的接收、預處理，以及模型預測結果的輸出與展示。確保系統的穩定性與可擴展性，支持前端應用與AI核心功能的資料互通。</p>
                 <p><em>技術棧：Python (Flask/Django), RESTful API, 資料庫整合, Web開發</em></p>
@@ -104,14 +149,15 @@
         <section id="contact">
             <h2>聯絡方式</h2>
             <ul>
-                <li>Email: <a href="mailto:okhts@gmail.com">pokhts@gmail.com</a></li>
-                <li>手機: 0933-982-543 (聯絡時間: 09:00-21:00)</li>
-                </ul>
+                <li><a href="mailto:pokhts@livemail.tw"><i class="fas fa-envelope"></i> pokhts@livemail.tw</a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-github"></i> GitHub (請替換成您的 GitHub 網址)</a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn (請替換成您的 LinkedIn 網址)</a></li>
+            </ul>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2020 葉俊良 (Phil). All Rights Reserved.</p>
+        <p>&copy; 2025 葉俊良 (Phil). All Rights Reserved.</p>
     </footer>
 
 </body>
